@@ -2,9 +2,9 @@
 
 Editor friendly source location
 
-Works with ruby 1.9
-
 ## Installation
+
+Ruby 1.8 user, please Install [ruby18_source_location] first.
 
 Add this line to your application's Gemfile:
 
@@ -50,3 +50,5 @@ line 4.
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+[ruby18_source_location]: https://github.com/ConradIrwin/ruby18_source_location
