@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["linjunpop@gmail.com"]
   gem.description   = 'Editor friendly source location'
   gem.summary       = 'Editor friendly source location'
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/linjunpop/source_position"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
