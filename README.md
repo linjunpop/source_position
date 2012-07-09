@@ -40,6 +40,9 @@ should ouputs something like this:
 "/foo/bar.rb:4"
 ```
 
+So, in iTerm, you can press `⌘-Click` to open this file and navigate to 
+line 4. 
+
 ## Contributing
 
 1. Fork it
