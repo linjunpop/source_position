@@ -1,3 +1,5 @@
+require 'ruby18_source_location' if RUBY_VERSION < '1.9'
+
 require "source_position/version"
 
 module SourcePosition

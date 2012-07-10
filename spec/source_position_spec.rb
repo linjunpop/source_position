@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'source_position'
 
 class Dummy
   def self.foobar
@@ -14,7 +13,7 @@ end
 describe SourcePosition do
   subject { Dummy.method(:foobar) }
 
-  its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:5"}
+  its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:4"}
 
   context 'source_location returns nil value' do
     subject { Object.method(:to_s) }
@@ -23,17 +22,16 @@ describe SourcePosition do
 
   describe 'Method' do
     subject { Dummy.method(:foobar) }
-    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:5"}
+    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:4"}
   end
 
   describe 'UnboundMethod' do
     subject { Dummy.instance_method(:test) }
-    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:9"}
+    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:8"}
   end
 
   describe 'Proc' do
     subject { Proc.new{} }
-    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:35"}
+    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:34"}
   end
 end
-
