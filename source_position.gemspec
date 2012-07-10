@@ -15,5 +15,9 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = SourcePosition::VERSION
 
+  if RUBY_VERSION < '1.9'
+    gem.add_dependency 'ruby18_source_location', '~> 0.2'
+  end
+
   gem.add_development_dependency 'rspec'
 end
