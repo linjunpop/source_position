@@ -9,3 +9,11 @@ end
 class Method
   include SourcePosition
 end
+
+class UnboundMethod
+  include SourcePosition
+end
+
+class Proc
+  include SourcePosition
+end
