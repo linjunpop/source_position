@@ -6,8 +6,6 @@ Editor friendly source location
 
 ## Installation
 
-Ruby 1.8 user, please Install [ruby18_source_location] first.
-
 Add this line to your application's Gemfile:
 
     gem 'source_position'
