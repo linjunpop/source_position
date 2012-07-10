@@ -2,6 +2,8 @@
 
 Editor friendly source location
 
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/linjunpop/source_position)
+
 ## Installation
 
 Ruby 1.8 user, please Install [ruby18_source_location] first.
