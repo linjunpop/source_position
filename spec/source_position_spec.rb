@@ -17,6 +17,11 @@ describe SourcePosition do
 
   context 'source_location returns nil value' do
     subject { Object.method(:to_s) }
+
+    before do
+      subject.should_receive(:source_location) { nil }
+    end
+
     its(:source_position) { should eq nil }
   end
 
@@ -32,6 +37,6 @@ describe SourcePosition do
 
   describe 'Proc' do
     subject { Proc.new{} }
-    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:34"}
+    its(:source_position) { should eq "#{Dir.pwd}/spec/source_position_spec.rb:39"}
   end
 end

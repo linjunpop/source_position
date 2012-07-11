@@ -16,7 +16,9 @@ Gem::Specification.new do |gem|
   gem.version       = SourcePosition::VERSION
 
   if RUBY_VERSION < '1.9'
-    gem.add_dependency 'ruby18_source_location', '~> 0.2'
+    unless defined?(RUBY_ENGINE) && RUBY_ENGINE =~ /rbx/
+      gem.add_dependency 'ruby18_source_location', '~> 0.2'
+    end
   end
 
   gem.add_development_dependency 'rspec'

@@ -1,6 +1,11 @@
-require 'ruby18_source_location' if RUBY_VERSION < '1.9'
+if RUBY_VERSION < '1.9'
+  unless defined?(RUBY_ENGINE) && RUBY_ENGINE =~ /rbx/
+    require 'ruby18_source_location'
+  end
+end
 
 require "source_position/version"
+require "source_position/rbx_source_location"
 
 module SourcePosition
   def source_position
@@ -17,5 +22,6 @@ class UnboundMethod
 end
 
 class Proc
+  include SourcePosition::RbxSourceLocation
   include SourcePosition
 end
