@@ -8,6 +8,8 @@ Editor friendly source location
 
 Tested on 1.8.7, 1.9.3, ree, rbx-18mode, rbx-19mode
 
+If you are using 1.8.7, you have to install [ruby18_source_location].
+
 ## Installation
 
 Add this line to your application's Gemfile:
