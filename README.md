@@ -8,7 +8,7 @@ Editor friendly source location
 
 Tested on 1.8.7, 1.9.3, ree, rbx-18mode, rbx-19mode
 
-If you are using 1.8.7, you have to install [ruby18_source_location].
+If you are using 1.8.7 or ree, you have to install [ruby18_source_location].
 
 ## Installation
 
