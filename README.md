@@ -6,6 +6,8 @@ Editor friendly source location
 [![Dependency Status](https://gemnasium.com/linjunpop/source_position.png)](https://gemnasium.com/linjunpop/source_position)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/linjunpop/source_position)
 
+Tested on 1.8.7, 1.9.3, ree, rbx-18mode, rbx-19mode
+
 ## Installation
 
 Add this line to your application's Gemfile:
