@@ -1,6 +1,11 @@
 if RUBY_VERSION < '1.9'
   unless defined?(RUBY_ENGINE) && RUBY_ENGINE =~ /rbx/
-    require 'ruby18_source_location'
+    begin
+      require 'ruby18_source_location'
+    rescue LoadError
+      raise 'Could not load the ruby18_source_location gem.
+Install it with `gem install ruby18_source_location`'
+    end
   end
 end
 
