@@ -6,7 +6,7 @@ Editor friendly source location
 [![Dependency Status](https://gemnasium.com/linjunpop/source_position.png)](https://gemnasium.com/linjunpop/source_position)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/linjunpop/source_position)
 
-Tested on 1.8.7, 1.9.3, ree, rbx-18mode, rbx-19mode
+Tested on 1.8.7, 1.9.3, 2.0.0, ree, rbx-18mode, rbx-19mode
 
 If you are using 1.8.7 or ree, you have to install [ruby18_source_location].
 
@@ -38,16 +38,10 @@ end
 
 ```ruby
 Dummy.method(:foobar).source_position
+# => "/foo/bar.rb:4"
 ```
 
-should ouputs something like this:
-
-```ruby
-"/foo/bar.rb:4"
-```
-
-So, in iTerm, you can press `⌘-Click` to open this file and navigate to 
-line 4. 
+So, in iTerm, you can use `⌘-Click` to open this file on line 4.
 
 ## Contributing
 
