@@ -4,7 +4,8 @@ Editor friendly source location
 
 [![Build Status](https://secure.travis-ci.org/linjunpop/source_position.png?branch=master)](http://travis-ci.org/linjunpop/source_position)
 [![Dependency Status](https://gemnasium.com/linjunpop/source_position.png)](https://gemnasium.com/linjunpop/source_position)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/linjunpop/source_position)
+[![Gem Version](https://badge.fury.io/rb/source_position.png)](http://badge.fury.io/rb/source_position)
+[![Code Climate](https://codeclimate.com/github/linjunpop/source_position.png)](https://codeclimate.com/github/linjunpop/source_position)
 [![endorse](http://api.coderwall.com/linjunpop/endorsecount.png)](http://coderwall.com/linjunpop)
 
 Tested on 1.8.7, 1.9.3, 2.0.0, ree, rbx-18mode, rbx-19mode
